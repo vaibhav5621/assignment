@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front End Intern Test</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles for rotation */
+    .rotate-box:hover {
+      transform: rotate(360deg);
+      transition: transform 1s;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div id="assignment" class="container mx-auto my-10 p-8 bg-purple-700 rounded-lg shadow-lg">
+
+    <h2 class="font-bold text-left text-white mb-8">OUR SERVICES</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Service 1 -->
+      <div class="rotate-box bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+        <img src="emergency plumbing servises.png" alt="Icon 1" class="rotate-box w-16 mb-4">
+        <h3 class="text-xl font-bold mb-2 text-center">Emergency Plumbing Services</h3>
+        <p class="text-gray-600 text-center mb-4">Get immediate help for 24/7 emergencies and plumbing issues.</p>
+        <a href="#" class="text-purple-600 font-semibold hover:underline">Explore this service</a>
+      </div>
+      <!-- Service 2 -->
+      <div class="rotate-box bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+        <img src="plumbing and drains.png" alt="Icon 2" class="rotate-box w-16 mb-4">
+        <h3 class="text-xl font-bold mb-2 text-center">Plumbing and Drains</h3>
+        <p class="text-gray-600 text-center mb-4">As the largest plumbing and drains service, we handle everything.</p>
+        <a href="#" class="text-purple-600 font-semibold hover:underline">Explore this service</a>
+      </div>
+      <!-- Service 3 -->
+      <div class="rotate-box bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+        <img src="water damage.png" alt="Icon 3" class="rotate-box w-16 mb-4">
+        <h3 class="text-xl font-bold mb-2 text-center">Water Damage</h3>
+        <p class="text-gray-600 text-center mb-4">We repair and restore all types of water damage.</p>
+        <a href="#" class="text-purple-600 font-semibold hover:underline">Explore this service</a>
+      </div>
+      <!-- Service 4 -->
+      <div class="rotate-box bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+        <img src="water heaters.png" alt="Icon 4" class=" rotate-box w-16 mb-4">
+        <h3 class="text-xl font-bold mb-2 text-center">Water Heaters</h3>
+        <p class="text-gray-600 text-center mb-4">Trusted experts for new water heaters and repairs.</p>
+        <a href="#" class="text-purple-600 font-semibold hover:underline">Explore this service</a>
+      </div>
+    </div>
+  </div>
+  <script>
+        // Rotate function using Anime.js
+        function rotateBox(element) {
+            anime({
+                targets: element,
+                rotate: '1 turn',
+                duration: 1000
+            });
+        }
+    </script>
+</body>
+</html>
